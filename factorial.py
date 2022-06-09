@@ -1,8 +1,8 @@
-def factorial(n):
-	if n==0 or n==1:
+def fact(x):
+	if x==0 or x==1:
 		return 1
 	else:
-		return n*factorial(n-1)
+		return x*fact(x-1)
 num=int(input("Enter the number: "))
-result=factorial(num)
-print("factorial of {0} is {1}".format(num,result))
+result=fact(num)
+print("factorial of %d is %d"%(num,result))
